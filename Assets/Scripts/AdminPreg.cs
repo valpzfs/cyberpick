@@ -15,7 +15,6 @@ public class AdminPreg : MonoBehaviour
     public TextMeshProUGUI textoPreg;
     int cont;
     public GameObject questionBox; //UI panel in inspector
-    //public int score = 0;
     void Start()
     {
         ShowQuestionBox();

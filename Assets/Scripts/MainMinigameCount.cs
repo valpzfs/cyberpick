@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMinigameCount : MonoBehaviour
 {
@@ -27,6 +28,15 @@ public class MainMinigameCount : MonoBehaviour
     onCount = onCount+ points;
     if(onCount == switchCount){
         winText.SetActive(true);
+        StartCoroutine(LoadSceneDelay(0.8f));
     }
+  }
+
+  private IEnumerator LoadSceneDelay(float delay)
+  {
+    yield return new WaitForSeconds(delay);
+
+    string lastScene = PlayerPrefs.GetString("LastScene", "MainLevel1Part");
+    SceneManager.LoadScene(lastScene);
   }
 }

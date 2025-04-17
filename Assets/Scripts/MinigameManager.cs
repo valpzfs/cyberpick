@@ -6,9 +6,13 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] private string[] minigameSceneNames;
     [SerializeField] private float delayBeforeLoad = 1f; // delay in seconds
 
-
-    public void LoadRandomMinigame()
+    public void LoadRandomMinigame(GameObject triggerObject)
     {
+        //Desactiva el collider
+        Collider2D col = triggerObject.GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+        
+        //Esperar un poco antes de cambiar de escena
         Invoke(nameof(LoadScene), delayBeforeLoad);
     }
 
