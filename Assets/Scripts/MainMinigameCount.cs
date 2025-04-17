@@ -28,7 +28,8 @@ public class MainMinigameCount : MonoBehaviour
     onCount = onCount+ points;
     if(onCount == switchCount){
         winText.SetActive(true);
-        GameManager.instance.minigameWon = true;
+        Debug.Log("Player won quiz!, Finished");
+        GameManager.instance.itemsWon.Add(GameManager.instance.currentItemID);
         GameManager.instance.SumPoints(10);
         StartCoroutine(LoadSceneDelay(0.8f));
     }

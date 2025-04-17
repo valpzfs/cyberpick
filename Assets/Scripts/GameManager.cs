@@ -10,10 +10,8 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public TextMeshProUGUI textscore;
 
-    //Minigame result tracking
-    public string triggerObjectID; //example batteryInv
-    public bool minigameWon = false;
     public HashSet<string> itemsWon = new HashSet<string>();
+    public string currentItemID;
 
     void Awake()
     {
@@ -34,6 +32,18 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Scene Loaded: " + scene.name);
         Debug.Log("Items won so far: " + string.Join(", ", itemsWon));
+
+        if(scene.name != "MainMenu" || scene.name != "QuizMinigame" || scene.name != "WireMiniGame" || scene.name != "LevelSelector" || scene.name != "MainLevel1Part")
+        {
+            foreach(string itemID in itemsWon)
+            {
+                GameObject itemObj = GameObject.Find(itemID);
+                if(itemObj != null)
+                {
+                    itemObj.SetActive(true);
+                }
+            }
+        }
         GameObject textObj = GameObject.Find("Score");
         if(textObj != null)
         {

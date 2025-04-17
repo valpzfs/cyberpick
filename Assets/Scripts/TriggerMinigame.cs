@@ -1,3 +1,4 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -6,12 +7,12 @@ public class TriggerMinigame : MonoBehaviour
 {
     public MinigameManager minigameManager;
     public GameObject itemImage;
+    public string itemID;
     
      void Start()
     {
-        // Hide the item image at the start
-        if (GameManager.instance != null && GameManager.instance.minigameWon &&
-            GameManager.instance.triggerObjectID == gameObject.name)
+        //Checks if the item was already won
+        if(GameManager.instance != null && GameManager.instance.itemsWon.Contains(itemID))
         {
             itemImage.SetActive(true);
         }
@@ -24,11 +25,28 @@ public class TriggerMinigame : MonoBehaviour
     {
 
         Debug.Log("Clicked minigame trigger object");
-        GameManager.instance.triggerObjectID = gameObject.name;
-
-        if (minigameManager != null)
+        if(GameManager.instance != null)
         {
-            minigameManager.LoadRandomMinigame(gameObject); 
+            GameManager.instance.currentItemID = itemID;
+        }
+
+        if(minigameManager != null)
+        {
+            minigameManager.LoadRandomMinigame(gameObject);
+        }
+    }
+
+    public void OnMinigameWon()
+    {
+        Debug.Log("Activando item: " + itemID);
+        if(itemImage != null)
+        {
+            itemImage.SetActive(true);
+        }
+
+        if(GameManager.instance != null)
+        {
+            GameManager.instance.itemsWon.Add(itemID);
         }
     }
 }

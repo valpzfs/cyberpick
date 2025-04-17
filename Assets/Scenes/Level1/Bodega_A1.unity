@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameManager: {fileID: 67350801}
   itemImage: {fileID: 1164676100}
-  itemID: Batteries
+  itemID: BatteriesInv
 --- !u!1001 &493535646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +416,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db13ada5d4e535445ae7b49caa0b9aa8, type: 3}
+--- !u!1001 &738603431
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1231198844947354247, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 442.27664
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 190.15103
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4827285
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0543a099759164a189dce0bbd533554e, type: 3}
 --- !u!1 &937616342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1158,7 @@ GameObject:
   - component: {fileID: 1164676101}
   - component: {fileID: 1164676102}
   m_Layer: 0
-  m_Name: BatterieInv
+  m_Name: BatteriesInv
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2373,7 +2430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameManager: {fileID: 67350801}
   itemImage: {fileID: 1972279176}
-  itemID: Gloves
+  itemID: GlovesInv
 --- !u!58 &1368658545
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2776,8 +2833,8 @@ Transform:
   m_GameObject: {fileID: 1406315271}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.85, y: -3.35, z: 0}
-  m_LocalScale: {x: 0.9024256, y: 1.1335846, z: 1}
+  m_LocalPosition: {x: -10.849999, y: -3.3499997, z: 0}
+  m_LocalScale: {x: 0.9024255, y: 1.1335846, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2040642215}
@@ -2864,7 +2921,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.5, y: 7.58, z: 0}
-  m_LocalScale: {x: 1.2311423, y: 1.0288298, z: 1}
+  m_LocalScale: {x: 1.2311424, y: 1.0288298, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1368658547}
@@ -2957,7 +3014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameManager: {fileID: 67350801}
   itemImage: {fileID: 1406315271}
-  itemID: Drone
+  itemID: DroneInv
 --- !u!58 &2040642213
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3254,3 +3311,4 @@ SceneRoots:
   - {fileID: 4241656939579963344}
   - {fileID: 1172551098}
   - {fileID: 67350802}
+  - {fileID: 738603431}
