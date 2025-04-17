@@ -12,8 +12,20 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Solo se muestra si no se ha mostrado antes
+    if (PlayerPrefs.GetInt("InitialDialogueShown", 0) == 0)
+    {
         textComponent.text = string.Empty;
         StartDialogue();
+
+        // Marca como mostrado
+        PlayerPrefs.SetInt("InitialDialogueShown", 1);
+        PlayerPrefs.Save();
+    }
+    else
+    {
+        gameObject.SetActive(false); // Oculta el diálogo si ya se mostró
+    }
     }
 
     // Update is called once per frame
