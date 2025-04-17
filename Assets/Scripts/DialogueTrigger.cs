@@ -35,6 +35,7 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     Debug.Log("TriggerDialogue() ejecutado correctamente.");
+    GameManager.instance.SumPoints(5);
     DialogueManager.Instance.StartDialogue(dialogue);
     }
 private void OnTriggerEnter2D(Collider2D collision)

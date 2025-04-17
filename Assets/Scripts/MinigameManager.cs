@@ -5,7 +5,7 @@ public class MinigameManager : MonoBehaviour
 {
     [SerializeField] private string[] minigameSceneNames;
     [SerializeField] private float delayBeforeLoad = 1f; // delay in seconds
-
+   
     public void LoadRandomMinigame(GameObject triggerObject)
     {
         //Desactiva el collider

@@ -47,7 +47,7 @@ public class Respuesta : MonoBehaviour
 
     void SiguienteConDelay()
     {
-        pregAleatorias.Siguiente();
+        pregAleatorias.Siguiente(esCorrecto);
         yaRespondido = false;
     }
 }

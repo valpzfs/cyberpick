@@ -399,6 +399,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45015314}
   m_CullTransparentMesh: 1
+--- !u!1 &107874512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 417336247057933654, guid: db13ada5d4e535445ae7b49caa0b9aa8, type: 3}
+  m_PrefabInstance: {fileID: 6183115980116416955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &107874513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107874512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d84a23f11a04da4a4996505bef9d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSpawnPoint: {fileID: 330031311}
 --- !u!1 &108720161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +4114,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &330031310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330031311}
+  m_Layer: 0
+  m_Name: RespawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &330031311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330031310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.36, y: 6.5, z: -9.937022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407021898
 GameObject:
   m_ObjectHideFlags: 0
@@ -12721,7 +12770,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 417336247057933654, guid: db13ada5d4e535445ae7b49caa0b9aa8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 107874513}
   m_SourcePrefab: {fileID: 100100000, guid: db13ada5d4e535445ae7b49caa0b9aa8, type: 3}
 --- !u!1001 &7149318380607706433
 PrefabInstance:
@@ -12895,3 +12947,4 @@ SceneRoots:
   - {fileID: 1207398728}
   - {fileID: 7149318380607706433}
   - {fileID: 130542676}
+  - {fileID: 330031311}

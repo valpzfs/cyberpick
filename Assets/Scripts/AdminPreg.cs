@@ -15,6 +15,8 @@ public class AdminPreg : MonoBehaviour
     public TextMeshProUGUI textoPreg;
     int cont;
     public GameObject questionBox; //UI panel in inspector
+    private int correctAnswers = 0;
+    
     void Start()
     {
         ShowQuestionBox();
@@ -40,7 +42,6 @@ public class AdminPreg : MonoBehaviour
         }
         else
         {
-            Debug.Log("Quiz terminado.");
             gameObject.SetActive(false);
             string lastScene = PlayerPrefs.GetString("LastScene", "MainLevel1Part");
             SceneManager.LoadScene(lastScene);
@@ -72,10 +73,31 @@ public class AdminPreg : MonoBehaviour
         }
     }
 
-    public void Siguiente()
+    public void Siguiente(bool wasCorrect)
     {
+        if(wasCorrect)
+        {
+            correctAnswers++;
+        }
         ListPreg.RemoveAt(pregActual);
         cont++; //Aumentar antes de generar nueva pregunta
-        generarPregunta();
+        if(cont == 2)
+        {
+            //Win Condition
+            if(correctAnswers == 2)
+            {
+                Debug.Log("Player won quiz!, Finished");
+                GameManager.instance.minigameWon = true; 
+            }
+            else
+            {
+                Debug.Log("Player did not Win, try Again, Finished");
+            }
+            generarPregunta();
+        }
+        else
+        {
+            generarPregunta();
+        }
     } 
 }

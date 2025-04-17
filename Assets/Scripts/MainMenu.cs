@@ -10,6 +10,8 @@ public class MainMenu : MonoBehaviour
     }
 
     public void EasyLevel(){
+        PlayerPrefs.SetString("LastScene", "LevelSelector"); // Guarda de dónde viene
+        PlayerPrefs.Save();
         SceneManager.LoadSceneAsync(2);
     }
 }

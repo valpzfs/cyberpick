@@ -9,7 +9,7 @@ public class MainMinigameCount : MonoBehaviour
 
     public int switchCount;
     public GameObject winText;
-    private int onCount =0;
+    private int onCount = 0;
    private void Awake()
 {
     if (Instance == null)
@@ -28,6 +28,8 @@ public class MainMinigameCount : MonoBehaviour
     onCount = onCount+ points;
     if(onCount == switchCount){
         winText.SetActive(true);
+        GameManager.instance.minigameWon = true;
+        GameManager.instance.SumPoints(10);
         StartCoroutine(LoadSceneDelay(0.8f));
     }
   }

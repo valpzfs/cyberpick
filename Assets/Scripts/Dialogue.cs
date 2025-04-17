@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -12,20 +13,30 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Solo se muestra si no se ha mostrado antes
-    if (PlayerPrefs.GetInt("InitialDialogueShown", 0) == 0)
-    {
-        textComponent.text = string.Empty;
-        StartDialogue();
+        //Si se vuelve a iniciar el juego InitialDialogue se muestra como no mostrado
+        string LastScene = PlayerPrefs.GetString("LastScene", "");
 
-        // Marca como mostrado
-        PlayerPrefs.SetInt("InitialDialogueShown", 1);
-        PlayerPrefs.Save();
-    }
-    else
-    {
-        gameObject.SetActive(false); // Oculta el diálogo si ya se mostró
-    }
+        if(LastScene == "LevelSelector")
+        {
+            PlayerPrefs.GetInt("InitialDialogueShown", 0);
+        }
+        else
+        {
+            // Solo se muestra si no se ha mostrado antes
+            if (PlayerPrefs.GetInt("InitialDialogueShown", 0) == 0)
+        {
+            textComponent.text = string.Empty;
+            StartDialogue();
+
+            // Marca como mostrado
+            PlayerPrefs.SetInt("InitialDialogueShown", 1);
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            gameObject.SetActive(false); // Oculta el diálogo si ya se mostró
+        }
+        }
     }
 
     // Update is called once per frame
