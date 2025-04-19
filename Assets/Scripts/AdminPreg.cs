@@ -73,17 +73,6 @@ public class AdminPreg : MonoBehaviour
         }
     }
 
-    // private GameObject FindInChildren(string name)
-    // {
-    //     var allTransforms = GameObject.FindObjectsByType<Transform>(FindObjectsSortMode.None);
-    //     foreach(Transform t in allTransforms)
-    //     {
-    //         if(t.name == name)
-    //             return t.gameObject;
-    //     }
-    //     return null;
-    // }
-
     public void Siguiente(bool wasCorrect)
     {
         if(wasCorrect)
@@ -97,8 +86,8 @@ public class AdminPreg : MonoBehaviour
             //Win Condition
             if(correctAnswers == 2)
             {
-                Debug.Log("Player won quiz!, Finished");
-                GameManager.instance.itemsWon.Add(GameManager.instance.currentItemID);
+                GameManager.instance.itemsWon.Add(GameManager.instance.currentItemID); 
+                Debug.Log("Item ganado: " + GameManager.instance.currentItemID);
             }
             else
             {

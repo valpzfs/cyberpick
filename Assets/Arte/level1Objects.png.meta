@@ -193,7 +193,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level1Objects_0
+      name: Batteries
       rect:
         serializedVersion: 2
         x: 89
@@ -201,7 +201,7 @@ TextureImporter:
         width: 122
         height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1Objects_1
+      name: Gloves
       rect:
         serializedVersion: 2
         x: 349
@@ -223,7 +223,7 @@ TextureImporter:
         width: 182
         height: 212
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,7 +237,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: level1Objects_2
+      name: Drone
       rect:
         serializedVersion: 2
         x: 639
@@ -245,7 +245,7 @@ TextureImporter:
         width: 312
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,7 +267,7 @@ TextureImporter:
         width: 292
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -289,7 +289,7 @@ TextureImporter:
         width: 292
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -311,7 +311,7 @@ TextureImporter:
         width: 292
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,7 +328,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 57756afe1710941b1a5f0fd1b909ae58
     internalID: 0
     vertices: []
     indices: 
@@ -338,10 +338,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      level1Objects_0: 1611553079803558073
-      level1Objects_1: 8855338784480052925
-      level1Objects_2: 5380461660742454581
-      level1Objects_3: -2884364854049674430
+      Batteries: 1611553079803558073
+      Drone: 5380461660742454581
+      Gloves: 8855338784480052925
       level1Objects_4: 7272780332055611545
       level1Objects_5: -2233327695376918315
   mipmapLimitGroupName: 
