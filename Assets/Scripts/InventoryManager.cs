@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.ComponentModel;
+using UnityEditor.Search;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -30,6 +32,13 @@ public class InventoryManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string sceneName = scene.name;
+        //Reset only if returning to the main menu
+        if(sceneName == "MainScene")
+        {
+            ResetInventory();
+            gameObject.SetActive(false);
+            return;
+        }
 
         if(sceneName.StartsWith("Bodega_"))
         {
@@ -58,5 +67,23 @@ public class InventoryManager : MonoBehaviour
         activeSlots[itemID] = slot;
 
         
+    }
+
+    public void ResetInventory()
+    {
+        //Borrar todos los slots visibles
+        foreach(var slot in activeSlots.Values)
+        {
+            Destroy(slot);
+        }
+        activeSlots.Clear();
+
+        //Borrar items ganados
+        if(GameManager.instance != null)
+        {
+            GameManager.instance.itemsWon.Clear();
+            GameManager.instance.currentItemID = null;
+        }
+        Debug.Log("Inventroy and ItemsWon reset");
     }
 }

@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Scene Loaded: " + scene.name);
-        Debug.Log("Items won so far: " + string.Join(", ", itemsWon));
+        Debug.Log("Items obtained so far: " + string.Join(", ", itemsWon));
 
         if(scene.name != "MainMenu" || scene.name != "QuizMinigame" || scene.name != "WireMiniGame" || scene.name != "LevelSelector" || scene.name != "MainLevel1Part")
         {

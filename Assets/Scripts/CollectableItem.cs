@@ -1,9 +1,15 @@
+using System.Collections;
 using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
     public string itemID;
    public Sprite itemIcon; 
+   public GameObject wrongItem;
+    public void Start()
+    {
+        wrongItem.SetActive(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +19,9 @@ public class CollectableItem : MonoBehaviour
             if(!TaskListLoader.CurrentExpectedItemID.Contains(itemID))
             {
                 Debug.LogWarning("This item is not allowed in this warehouse!!");
+                //wrongItem.SetActive(true);
+                GameManager.instance.SumPoints(-5);
+                StartCoroutine(WrongItemMessage());
                 return;
             }
             Debug.Log("Item Picked up: " + itemID);
@@ -26,5 +35,11 @@ public class CollectableItem : MonoBehaviour
             //Remove from scene
             Destroy(gameObject);
         }
+    }
+    private IEnumerator WrongItemMessage()
+    {
+        wrongItem.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        wrongItem.SetActive(false);
     }
 }

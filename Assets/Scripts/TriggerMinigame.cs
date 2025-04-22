@@ -44,9 +44,9 @@ public class TriggerMinigame : MonoBehaviour
             itemImage.SetActive(true);
         }
 
-        if(GameManager.instance != null)
-        {
-            GameManager.instance.itemsWon.Add(itemID);
-        }
+        // if(GameManager.instance != null)
+        // {
+        //     GameManager.instance.itemsWon.Add(itemID);
+        // }
     }
 }
