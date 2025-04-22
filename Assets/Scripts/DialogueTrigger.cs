@@ -25,6 +25,7 @@ public class Dialogue
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    
 
     public void TriggerDialogue()
     {
@@ -45,7 +46,9 @@ private void OnTriggerEnter2D(Collider2D collision)
     if (collision.CompareTag("Player") && !DialogueManager.Instance.isDialogueActive)
     {
         Debug.Log("El jugador ha activado el diálogo.");
+        GameManager.instance.TalkedtoSupervisor = true;
         TriggerDialogue();
+        
     }
 }
 

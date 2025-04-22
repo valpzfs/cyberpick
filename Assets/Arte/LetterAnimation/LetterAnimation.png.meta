@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: d2108c0e3e4200b4b839fea8f5a28594
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2101597668658149415
+    second: LetterAnimation_0
+  - first:
+      213: 4319728098198393874
+    second: LetterAnimation_1
+  - first:
+      213: 2085725405963465559
+    second: LetterAnimation_2
+  - first:
+      213: -3727191634888597047
+    second: LetterAnimation_3
+  - first:
+      213: 8803770291645871136
+    second: LetterAnimation_4
+  - first:
+      213: 1192654031816465841
+    second: LetterAnimation_5
+  - first:
+      213: 7682416150619192905
+    second: LetterAnimation_6
+  - first:
+      213: -5501308053758674545
+    second: LetterAnimation_7
+  - first:
+      213: -2952152437241255706
+    second: LetterAnimation_8
+  - first:
+      213: 3786584427555266443
+    second: LetterAnimation_9
+  - first:
+      213: 2774275507216421868
+    second: LetterAnimation_10
+  - first:
+      213: -3666367582903711684
+    second: LetterAnimation_11
+  - first:
+      213: -8721151573333148486
+    second: LetterAnimation_12
+  - first:
+      213: 8511368273701565969
+    second: LetterAnimation_13
+  - first:
+      213: 2524248995894694543
+    second: LetterAnimation_14
+  - first:
+      213: -8658923167489472251
+    second: LetterAnimation_15
+  - first:
+      213: -2556606673736040180
+    second: LetterAnimation_16
+  - first:
+      213: 6764484686796650103
+    second: LetterAnimation_17
+  - first:
+      213: -8415112862192585842
+    second: LetterAnimation_18
+  - first:
+      213: 7171673657693790532
+    second: LetterAnimation_19
+  - first:
+      213: -948817753662431022
+    second: LetterAnimation_20
+  - first:
+      213: -3508750945466668356
+    second: LetterAnimation_21
+  - first:
+      213: 4648502419877201143
+    second: LetterAnimation_22
+  - first:
+      213: 3329483710397360429
+    second: LetterAnimation_23
+  - first:
+      213: -4732986800228348035
+    second: LetterAnimation_24
+  - first:
+      213: -1043618811485251424
+    second: LetterAnimation_25
+  - first:
+      213: -3683561580019332028
+    second: LetterAnimation_26
+  - first:
+      213: -330473544013133487
+    second: LetterAnimation_27
+  - first:
+      213: 183590959860737397
+    second: LetterAnimation_28
+  - first:
+      213: 862707400978301929
+    second: LetterAnimation_29
+  - first:
+      213: -6447083268959538433
+    second: LetterAnimation_30
+  - first:
+      213: -6483271543482128060
+    second: LetterAnimation_31
+  - first:
+      213: -5787986121640410405
+    second: LetterAnimation_32
+  - first:
+      213: 8606229404169397121
+    second: LetterAnimation_33
+  - first:
+      213: -3767508980895006685
+    second: LetterAnimation_34
+  - first:
+      213: 3839650851882907830
+    second: LetterAnimation_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LetterAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d787da1e00a5d2e0800000000000000
+      internalID: -2101597668658149415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214936381d1c2fb30800000000000000
+      internalID: 4319728098198393874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753b571c43cf1fc10800000000000000
+      internalID: 2085725405963465559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c168a0a4fa564cc0800000000000000
+      internalID: -3727191634888597047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02470b59f664d2a70800000000000000
+      internalID: 8803770291645871136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd9b52e5882d8010800000000000000
+      internalID: 1192654031816465841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e716a29cc6d9a60800000000000000
+      internalID: 7682416150619192905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89f7b7e87d67a3b0800000000000000
+      internalID: -5501308053758674545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e86e6fdff8d707d0800000000000000
+      internalID: -2952152437241255706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f15748976ac8430800000000000000
+      internalID: 3786584427555266443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce393b400e4308620800000000000000
+      internalID: 2774275507216421868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38440dcb127e1dc0800000000000000
+      internalID: -3666367582903711684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc7327c9de38f680800000000000000
+      internalID: -8721151573333148486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116f28a89547e1670800000000000000
+      internalID: 8511368273701565969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8290f4761fe70320800000000000000
+      internalID: 2524248995894694543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509c360914355d780800000000000000
+      internalID: -8658923167489472251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01029596cb158cd0800000000000000
+      internalID: -2556606673736040180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 60
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776751d9bf640ed50800000000000000
+      internalID: 6764484686796650103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83b030ef63873b80800000000000000
+      internalID: -8415112862192585842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4416ddbc137e68360800000000000000
+      internalID: 7171673657693790532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0ed54b74f15d2f0800000000000000
+      internalID: -948817753662431022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbaa422fa996e4fc0800000000000000
+      internalID: -3508750945466668356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f40352725cc28040800000000000000
+      internalID: 4648502419877201143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d292fa35bc3b43e20800000000000000
+      internalID: 3329483710397360429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fc6c5e49d015eb0800000000000000
+      internalID: -4732986800228348035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8918468325481f0800000000000000
+      internalID: -1043618811485251424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 34
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ccba2624c51ecc0800000000000000
+      internalID: -3683561580019332028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159ce69001ce96bf0800000000000000
+      internalID: -330473544013133487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_28
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575e87a510f3c8200800000000000000
+      internalID: 183590959860737397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e389647fc3f8fb00800000000000000
+      internalID: 862707400978301929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_30
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff27d4ccceb5786a0800000000000000
+      internalID: -6447083268959538433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449695c81eac606a0800000000000000
+      internalID: -6483271543482128060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_32
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd28bb6d941fcafa0800000000000000
+      internalID: -5787986121640410405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_33
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183e90b9b087f6770800000000000000
+      internalID: 8606229404169397121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_34
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320c8a10b8e17bbc0800000000000000
+      internalID: -3767508980895006685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LetterAnimation_35
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8b1004b1e294530800000000000000
+      internalID: 3839650851882907830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LetterAnimation_0: -2101597668658149415
+      LetterAnimation_1: 4319728098198393874
+      LetterAnimation_10: 2774275507216421868
+      LetterAnimation_11: -3666367582903711684
+      LetterAnimation_12: -8721151573333148486
+      LetterAnimation_13: 8511368273701565969
+      LetterAnimation_14: 2524248995894694543
+      LetterAnimation_15: -8658923167489472251
+      LetterAnimation_16: -2556606673736040180
+      LetterAnimation_17: 6764484686796650103
+      LetterAnimation_18: -8415112862192585842
+      LetterAnimation_19: 7171673657693790532
+      LetterAnimation_2: 2085725405963465559
+      LetterAnimation_20: -948817753662431022
+      LetterAnimation_21: -3508750945466668356
+      LetterAnimation_22: 4648502419877201143
+      LetterAnimation_23: 3329483710397360429
+      LetterAnimation_24: -4732986800228348035
+      LetterAnimation_25: -1043618811485251424
+      LetterAnimation_26: -3683561580019332028
+      LetterAnimation_27: -330473544013133487
+      LetterAnimation_28: 183590959860737397
+      LetterAnimation_29: 862707400978301929
+      LetterAnimation_3: -3727191634888597047
+      LetterAnimation_30: -6447083268959538433
+      LetterAnimation_31: -6483271543482128060
+      LetterAnimation_32: -5787986121640410405
+      LetterAnimation_33: 8606229404169397121
+      LetterAnimation_34: -3767508980895006685
+      LetterAnimation_35: 3839650851882907830
+      LetterAnimation_4: 8803770291645871136
+      LetterAnimation_5: 1192654031816465841
+      LetterAnimation_6: 7682416150619192905
+      LetterAnimation_7: -5501308053758674545
+      LetterAnimation_8: -2952152437241255706
+      LetterAnimation_9: 3786584427555266443
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

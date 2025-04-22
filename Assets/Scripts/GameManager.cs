@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public HashSet<string> itemsWon = new HashSet<string>();
     public string currentItemID;
+    public bool TalkedtoSupervisor = false;
 
     void Awake()
     {

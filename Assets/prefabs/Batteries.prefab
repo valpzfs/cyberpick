@@ -120,7 +120,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -240,6 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: Batteries_A1
   itemIcon: {fileID: 1611553079803558073, guid: e42e907422acd88499b4067684201fff, type: 3}
+  wrongItem: {fileID: 0}
 --- !u!58 &7885061826627481091
 CircleCollider2D:
   m_ObjectHideFlags: 0
