@@ -1,5 +1,8 @@
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
+using TMPro;
 using UnityEngine;
+//using UnityEngine.UI;
 
 [System.Serializable]
 public class DialogueCharacter
@@ -25,31 +28,49 @@ public class Dialogue
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    
+    public DialogueManager dialogueManager; //Assign from Inspector
+    public GameObject dialogueCanvas;
+    void Start()
+    {
+        if (dialogueCanvas != null)
+            dialogueCanvas.SetActive(false);
+    }
+
 
     public void TriggerDialogue()
     {
-         if (DialogueManager.Instance == null)
-    {
-        Debug.LogError("Error: DialogueManager.Instance es null");
-        return;
+        Debug.Log("TriggerDialogue ejectuado");
+        GameManager.instance.SumPoints(5);
+        dialogueManager.StartDialogue(dialogue, dialogueCanvas);
     }
+    // {
+    //      if (DialogueManager.Instance == null)
+    // {
+    //     Debug.LogError("Error: DialogueManager.Instance es null");
+    //     return;
+    // }
 
-    Debug.Log("TriggerDialogue() ejecutado correctamente.");
-    GameManager.instance.SumPoints(5);
-    DialogueManager.Instance.StartDialogue(dialogue);
-    }
+    // Debug.Log("TriggerDialogue() ejecutado correctamente.");
+    // GameManager.instance.SumPoints(5);
+    // DialogueManager.Instance.StartDialogue(dialogue,dialogueCanvas);
+    // }
 private void OnTriggerEnter2D(Collider2D collision)
 {
-    Debug.Log("Colisión detectada con: " + collision.gameObject.name);
-    
-    if (collision.CompareTag("Player") && !DialogueManager.Instance.isDialogueActive)
+    if(collision.CompareTag("Player") && !dialogueManager.isDialogueActive)
     {
-        Debug.Log("El jugador ha activado el diálogo.");
+        Debug.Log("Jugador inicio dialogo");
         GameManager.instance.TalkedtoSupervisor = true;
         TriggerDialogue();
-        
     }
+    // Debug.Log("Colisión detectada con: " + collision.gameObject.name);
+    
+    // if (collision.CompareTag("Player") && !DialogueManager.Instance.isDialogueActive)
+    // {
+    //     Debug.Log("El jugador ha activado el diálogo.");
+    //     GameManager.instance.TalkedtoSupervisor = true;
+    //     TriggerDialogue();
+        
+    // }
 }
 
 }

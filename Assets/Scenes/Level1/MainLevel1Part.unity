@@ -200,7 +200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 959.99994, y: 539.9014}
+  m_AnchoredPosition: {x: 963, y: 651}
   m_SizeDelta: {x: 730.80005, y: 411}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &24494560
@@ -349,8 +349,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 108720163}
-        m_TargetAssemblyTypeName: dialogueManager, Assembly-CSharp
+      - m_Target: {fileID: 1889748907}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextDialogueLine
         m_Mode: 1
         m_Arguments:
@@ -427,7 +427,6 @@ GameObject:
   m_Component:
   - component: {fileID: 108720162}
   - component: {fileID: 108720164}
-  - component: {fileID: 108720163}
   m_Layer: 5
   m_Name: DialogueBoxSup2
   m_TagString: Untagged
@@ -456,28 +455,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000023588975, y: -36.25583}
+  m_AnchoredPosition: {x: 1.9, y: 2.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &108720163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108720161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 530d7720bab5979468862f7be9176a1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterIcon: {fileID: 918308407}
-  characterName: {fileID: 1169883230}
-  dialogueArea: {fileID: 955234290}
-  isDialogueActive: 0
-  typingSpeed: 0.05
-  animator: {fileID: 108720164}
-  dialogueCanvas: {fileID: 459186523}
 --- !u!95 &108720164
 Animator:
   serializedVersion: 7
@@ -850,7 +830,7 @@ Transform:
   m_GameObject: {fileID: 130542674}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.65, y: -17.84, z: 0}
+  m_LocalPosition: {x: -2.575, y: -16.718, z: 0}
   m_LocalScale: {x: 0.15428, y: 0.14700001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2720,7 +2700,6 @@ GameObject:
   m_Component:
   - component: {fileID: 223209752}
   - component: {fileID: 223209753}
-  - component: {fileID: 223209754}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -2749,7 +2728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000023588975, y: -36.25583}
+  m_AnchoredPosition: {x: -0, y: -37.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &223209753
@@ -2774,25 +2753,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &223209754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223209751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 530d7720bab5979468862f7be9176a1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterIcon: {fileID: 1193110784}
-  characterName: {fileID: 870888718}
-  dialogueArea: {fileID: 1330772876}
-  isDialogueActive: 0
-  typingSpeed: 0.05
-  animator: {fileID: 223209753}
-  dialogueCanvas: {fileID: 24494558}
 --- !u!1 &314041346
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,8 +4454,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223209754}
-        m_TargetAssemblyTypeName: dialogueManager, Assembly-CSharp
+      - m_Target: {fileID: 1889748907}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextDialogueLine
         m_Mode: 1
         m_Arguments:
@@ -4571,7 +4531,7 @@ Transform:
   m_GameObject: {fileID: 423232045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.05, y: -17.84, z: 0}
+  m_LocalPosition: {x: -2.168, y: -17.894, z: 0}
   m_LocalScale: {x: 0.9505, y: 0.9505, z: 0.9505}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5220,7 +5180,7 @@ GameObject:
   m_Layer: 0
   m_Name: DragandDropTrigger
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5266,11 +5226,11 @@ Transform:
   m_GameObject: {fileID: 698572396}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.47, y: -18.75, z: 0.097724885}
+  m_LocalPosition: {x: -2.628, y: -16.637, z: 0.097724885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1463561095}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742127245
 GameObject:
@@ -6098,7 +6058,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.642, y: -84.7536}
+  m_AnchoredPosition: {x: 30, y: -83}
   m_SizeDelta: {x: 377.2838, y: 57.5072}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1044585476
@@ -6414,7 +6374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27, y: -85}
+  m_AnchoredPosition: {x: 27, y: -75}
   m_SizeDelta: {x: 450, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131386756
@@ -7421,8 +7381,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b6b70692405ce4f1b8a79d22d281602b, type: 2}
+  m_sharedMaterial: {fileID: 1781334900288271051, guid: b6b70692405ce4f1b8a79d22d281602b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7699,11 +7659,10 @@ Transform:
   m_GameObject: {fileID: 1463561094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -0.12, z: 0}
+  m_LocalPosition: {x: -0.03, y: 0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 698572399}
   - {fileID: 423232046}
   m_Father: {fileID: 2127558988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7729,6 +7688,8 @@ MonoBehaviour:
         name: Albert
         icon: {fileID: -9157608715577299908, guid: a3c2f2bbdf3a32441941ed2d54a5278f, type: 3}
       line: Lets register the items you've picked today!
+  dialogueManager: {fileID: 1889748907}
+  dialogueCanvas: {fileID: 459186523}
 --- !u!61 &1463561097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8804,7 +8765,7 @@ Transform:
   m_GameObject: {fileID: 1820715737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -0.12, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8977,7 +8938,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -4.3088827, y: 5.5763426}
+  m_Offset: {x: -4.3088827, y: 5.635958}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8987,7 +8948,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.2603588, y: 1.9649525}
+  m_Size: {x: 2.2603588, y: 2.0841837}
   m_EdgeRadius: 0
 --- !u!114 &1820715744
 MonoBehaviour:
@@ -9012,6 +8973,115 @@ MonoBehaviour:
         icon: {fileID: -3256972004855376745, guid: a3c2f2bbdf3a32441941ed2d54a5278f, type: 3}
       line: Here's the list for today's duties, be careful where you grab the items
         from!
+  dialogueManager: {fileID: 1889748907}
+  dialogueCanvas: {fileID: 24494558}
+--- !u!1001 &1880798210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1231198844947354247, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 442.27664
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 190.15103
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4827285
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110874997508359336, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0543a099759164a189dce0bbd533554e, type: 3}
+--- !u!1 &1889748906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889748908}
+  - component: {fileID: 1889748907}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1889748907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889748906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530d7720bab5979468862f7be9176a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterIcon: {fileID: 1193110784}
+  characterName: {fileID: 870888718}
+  dialogueArea: {fileID: 1330772876}
+  animator: {fileID: 223209753}
+  isDialogueActive: 0
+  typingSpeed: 0.1
+--- !u!4 &1889748908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889748906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.04, y: 3.88, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1891946665
 GameObject:
   m_ObjectHideFlags: 0
@@ -13331,6 +13401,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9194174086380978243, guid: 8d5b415103071498788b23872c199431, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.19995117
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3014777076744414143, guid: 8d5b415103071498788b23872c199431, type: 3}
@@ -13362,3 +13436,6 @@ SceneRoots:
   - {fileID: 330031311}
   - {fileID: 124784500}
   - {fileID: 1195997660}
+  - {fileID: 1880798210}
+  - {fileID: 698572399}
+  - {fileID: 1889748908}

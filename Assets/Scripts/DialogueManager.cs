@@ -6,40 +6,35 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance;
+    //public static DialogueManager Instance;
 
     public Image characterIcon;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
-
-    private Queue<DialogueLine> lines;
-    
-    public bool isDialogueActive = false;
-
-    public float typingSpeed = 0.2f;
-
     public Animator animator;
 
-    public GameObject dialogueCanvas; // Arrastra el Canvas en el Inspector
+    private Queue<DialogueLine> lines = new Queue<DialogueLine>();
+    
+    public bool isDialogueActive = false;
+    private GameObject dialogueCanvas;
+    public float typingSpeed = 0.2f;
 
-    private void Awake()
-    {
-        if (Instance == null)
-            Instance = this;
 
-        lines = new Queue<DialogueLine>();
+    // private void Awake()
+    // {
+    //     if (Instance == null)
+    //         Instance = this;
 
-        // Asegurar que el Canvas de diálogo está oculto al inicio
-        dialogueCanvas.SetActive(false);
-    }
+    //     lines = new Queue<DialogueLine>();
 
-    public void StartDialogue(Dialogue dialogue)
+    // }
+
+    public void StartDialogue(Dialogue dialogue, GameObject canvas)
     {
         isDialogueActive = true;
-
-        // Activamos el Canvas y la animación
+        dialogueCanvas = canvas;
         dialogueCanvas.SetActive(true);
-        animator.SetBool("IsTalking", true);
+        if(animator != null)animator.SetBool("IsTalking", true);
 
         lines.Clear();
 
@@ -83,10 +78,11 @@ public class DialogueManager : MonoBehaviour
         isDialogueActive = false;
         
         // Desactivamos la animación de diálogo (regresamos a Idle)
-        animator.SetBool("IsTalking", false);
+        if(animator != null) animator.SetBool("IsTalking", false);
 
         // Ocultamos el Canvas
-        dialogueCanvas.SetActive(false);
+        if(dialogueCanvas != null)
+            dialogueCanvas.SetActive(false);
     }
 }
 

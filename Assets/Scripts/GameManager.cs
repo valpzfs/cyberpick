@@ -57,6 +57,9 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.DeleteKey("InitialDialogueShown");
             PlayerPrefs.Save();
+            ReiniciarPuntaje();
+            TalkedtoSupervisor = false;
+
         }
     }
 
