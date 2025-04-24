@@ -20,20 +20,19 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.2f;
 
 
-    // private void Awake()
-    // {
-    //     if (Instance == null)
-    //         Instance = this;
-
-    //     lines = new Queue<DialogueLine>();
-
-    // }
 
     public void StartDialogue(Dialogue dialogue, GameObject canvas)
     {
         isDialogueActive = true;
         dialogueCanvas = canvas;
         dialogueCanvas.SetActive(true);
+        Transform box = dialogueCanvas.transform.Find("DialogueBox");
+        //Actualizar las referencias
+        characterIcon = box.transform.Find("SupervisorImg").GetComponent<Image>();
+        characterName = box.transform.Find("SupervisorName").GetComponent<TextMeshProUGUI>();
+        dialogueArea = box.transform.Find("Dialoguetxt").GetComponent<TextMeshProUGUI>();
+        animator = box.GetComponent<Animator>();
+
         if(animator != null)animator.SetBool("IsTalking", true);
 
         lines.Clear();
