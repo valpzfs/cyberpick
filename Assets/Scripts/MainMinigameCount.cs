@@ -25,7 +25,7 @@ public class MainMinigameCount : MonoBehaviour
 }
 
     public void SwitchChange(int points){
-    onCount = onCount+ points;
+    onCount = onCount + points;
     if(onCount == switchCount){
         winText.SetActive(true);
         Debug.Log("Player won quiz!, Finished");

@@ -79,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -117,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EstantesBodegas_0: -2774966151783411684
+      EstantesBodegas_1: -567505056327953190
+      EstantesBodegas_10: 8165509525018373710
+      EstantesBodegas_11: 8541229434517431207
+      EstantesBodegas_12: -3796988683981622524
+      EstantesBodegas_13: -4370832152232712626
+      EstantesBodegas_14: 6909959899084614265
+      EstantesBodegas_2: -3444046394842909550
+      EstantesBodegas_3: 3417079527160681006
+      EstantesBodegas_4: -3429753804850758985
+      EstantesBodegas_5: -3102593450296478690
+      EstantesBodegas_6: -6928305305823704942
+      EstantesBodegas_7: 2915814231005757762
+      EstantesBodegas_8: -5603387441917038327
+      EstantesBodegas_9: -6300762283515331882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -87,7 +87,7 @@ public class AdminPreg : MonoBehaviour
             if(correctAnswers == 2)
             {
                 GameManager.instance.itemsWon.Add(GameManager.instance.currentItemID); 
-                Debug.Log("Item ganado: " + GameManager.instance.currentItemID);
+                //Debug.Log("Item ganado: " + GameManager.instance.currentItemID);
             }
             else
             {

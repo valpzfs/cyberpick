@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameSceneNames:
   - QuizMinigame
-  - WireMiniGame1
+  - WireGame2
   delayBeforeLoad: 0.8

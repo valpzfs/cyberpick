@@ -397,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MiniAvanceDecoracions_0: 1966074250541700275
+      MiniAvanceDecoracions_1: -907753873781704131
+      MiniAvanceDecoracions_10: -1108890767329633637
+      MiniAvanceDecoracions_2: 5895928749997401591
+      MiniAvanceDecoracions_3: 4653243019038407195
+      MiniAvanceDecoracions_4: 1990986434944633656
+      MiniAvanceDecoracions_5: 6775975818802422232
+      MiniAvanceDecoracions_6: -599223442307860182
+      MiniAvanceDecoracions_7: -8451959975225887598
+      MiniAvanceDecoracions_8: -8820487572112820632
+      MiniAvanceDecoracions_9: -4786047344725146383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

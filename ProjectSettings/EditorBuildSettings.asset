@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DragAndDropMiniGame.unity
     guid: 9d24086faffb2704c873e4601d37aca6
+  - enabled: 1
+    path: Assets/Scenes/WireGame2.unity
+    guid: 20bc26c4a637bd841ad381b2014fd959
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

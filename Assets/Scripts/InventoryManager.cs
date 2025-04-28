@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System.ComponentModel;
-using UnityEditor.Search;
+//using UnityEditor.Search;
 
 public class InventoryManager : MonoBehaviour
 {

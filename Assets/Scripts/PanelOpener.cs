@@ -5,6 +5,8 @@ using UnityEngine;
 public class PanelOpener : MonoBehaviour
 {
     public GameObject Panel;
+    public AudioSource soundEffect;
+    public float delaySceneLoad = 1.0f;
 
     void Start()
     {
@@ -20,6 +22,16 @@ public class PanelOpener : MonoBehaviour
         {
             bool isActive = Panel.activeSelf;
             Panel.SetActive(!isActive); // Alternar el estado del panel
+             StartCoroutine(PlaySound());
+        }
+    }
+
+    private IEnumerator PlaySound()
+    {
+        if(soundEffect != null)
+        {
+            soundEffect.Play();
+            yield return new WaitForSeconds(delaySceneLoad);
         }
     }
 }

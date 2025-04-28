@@ -2,33 +2,28 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class MainMenu : MonoBehaviour
 {
     public AudioSource soundEffect;
     public float delaySceneLoad = 1.0f;
     public void PlayGame(){
-        //SceneManager.LoadSceneAsync(1);
-        StartCoroutine(LoadBeforeDelay());
+        SceneManager.LoadSceneAsync(1);
     }
 
-    public void EasyLevel()
-    {
-        PlayerPrefs.SetString("LastScene", "LevelSelector"); // Guarda de dónde viene
-        PlayerPrefs.Save();
-        StartCoroutine(LoadBeforeDelay());
+    public void EasyLevel(){
+        StartCoroutine(PlaySoundThenLoad(2));
     }
 
-    private IEnumerator LoadBeforeDelay()
+
+    private IEnumerator PlaySoundThenLoad(int sceneIndex)
     {
-        // PlayerPrefs.SetString("LastScene", "LevelSelector"); // Guarda de dónde viene
-        // PlayerPrefs.Save();
         if(soundEffect != null)
         {
             soundEffect.Play();
             yield return new WaitForSeconds(delaySceneLoad);
         }
-        SceneManager.LoadSceneAsync(2);
-        //SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadScene(sceneIndex);
     }
 }
