@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
     public Animator animator;
+    public AudioSource soundEffect;
 
     private Queue<DialogueLine> lines = new Queue<DialogueLine>();
     
@@ -65,10 +66,21 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
         dialogueArea.text = "";
+        if(soundEffect != null)
+            {
+                soundEffect.loop = true;
+                soundEffect.Play();
+            }
         foreach (char letter in dialogueLine.line.ToCharArray())
         {
             dialogueArea.text += letter;
             yield return new WaitForSeconds(typingSpeed);
+
+        }
+        if (soundEffect != null)
+        {
+            soundEffect.Stop();
+            soundEffect.loop = false;
         }
     }
 

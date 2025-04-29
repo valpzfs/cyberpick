@@ -32,7 +32,7 @@ public class MenuButton : MonoBehaviour
     public void Home()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene(0);
     }
 
     private void CloseAllPanels()

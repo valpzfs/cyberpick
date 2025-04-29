@@ -11,16 +11,20 @@ public class Botones : MonoBehaviour
     public float delaySceneLoad = 1.0f;
     public void Iniciar()
     {
-        StartCoroutine(PlaySoundThenLoad());
+        StartCoroutine(PlaySoundThenLoad(1));
     }
-    private IEnumerator PlaySoundThenLoad()
+    public void instrucciones()
+    {
+        StartCoroutine(PlaySoundThenLoad(11));
+    }
+    private IEnumerator PlaySoundThenLoad(int sceneIndex)
     {
         if(soundEffect != null)
         {
             soundEffect.Play();
             yield return new WaitForSeconds(delaySceneLoad);
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneIndex);
     }
     public void Salir()
     {
@@ -30,4 +34,6 @@ public class Botones : MonoBehaviour
             Application.Quit();
         #endif
     }
+
+    
 }

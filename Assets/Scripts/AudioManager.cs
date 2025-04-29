@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-    public Sound[] musicSounds, sfxSounds;
+    public AudioSource[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
     public void Awake()
@@ -27,7 +27,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayMusic(string name){
-        Sound s = Array.Find(musicSounds, x => x.name == name);
+        AudioSource s = Array.Find(musicSounds, x => x.name == name);
 
         if (s == null){
             Debug.Log("Sound not found");
@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void playSFX(string name){
-        Sound s = Array.Find(sfxSounds, x => x.name == name);
+        AudioSource s = Array.Find(sfxSounds, x => x.name == name);
 
         if (s == null){
             Debug.Log("Sound not found");

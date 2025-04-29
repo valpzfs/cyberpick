@@ -16,6 +16,11 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(PlaySoundThenLoad(2));
     }
 
+    public void Back()
+    {
+        StartCoroutine(PlaySoundThenLoad(0));
+    }
+
 
     private IEnumerator PlaySoundThenLoad(int sceneIndex)
     {

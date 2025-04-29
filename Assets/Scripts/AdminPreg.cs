@@ -15,12 +15,20 @@ public class AdminPreg : MonoBehaviour
     public TextMeshProUGUI textoPreg;
     int cont;
     public GameObject questionBox; //UI panel in inspector
+    public GameObject instructions; //UI panel in inspector
     private int correctAnswers = 0;
     
     void Start()
     {
-        ShowQuestionBox();
+        instructions.SetActive(true);
+        //ShowQuestionBox();
 
+    }
+
+    public void HideInstructions()
+    {
+        instructions.SetActive(false); // esconde el panel
+        ShowQuestionBox();
     }
 
     public void ShowQuestionBox()
