@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2532861613601948913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 278523159908445046, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2398307185233765309, guid: 085d49dabf1944d439d62ff71acd96f8, type: 2}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 302.71613
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 150.24553
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1028812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250165281692254418, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155980072382910057, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155980072382910057, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3649117918163644271, guid: 085d49dabf1944d439d62ff71acd96f8, type: 2}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: audio4
+      value: 
+      objectReference: {fileID: 8300000, guid: f9f77e185c7c439439e384ed38269aba, type: 3}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: sfxitem
+      value: 
+      objectReference: {fileID: 8300000, guid: 22d7e6b5b4788ba419d6e6c8206f4866, type: 3}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: sfxpanel
+      value: 
+      objectReference: {fileID: 8300000, guid: da3e0e761e2e94a4b83ed65eca3cb4e4, type: 3}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: SFXSource
+      value: 
+      objectReference: {fileID: 2376505741217918855}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d8fb7ffac6d21b4d9a89ce094aba615, type: 3}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: sfxSounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7144635826059714317, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: musicSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792075633100024389, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+      propertyPath: m_Name
+      value: Audio Manager Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+--- !u!82 &2376505741217918855 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 278523159908445046, guid: 8b910f440d4d93141a0ad33de31d591f, type: 3}
+  m_PrefabInstance: {fileID: 2532861613601948913}
+  m_PrefabAsset: {fileID: 0}

@@ -1,66 +1,75 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance;
-    public AudioSource[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+  [Header("Audio source")]
+  [SerializeField] AudioSource musicSource;
+  [SerializeField] AudioSource SFXSource;
 
-    public void Awake()
+  [Header("Audio clips")]
+  public static AudioManager instance = null;
+  public AudioClip [] background;
+  public AudioClip sfxitem;
+  public AudioClip sfxpanel;
+  public AudioClip audio4;
+
+
+    void Awake()
     {
-        if(Instance == null){
-            Instance=this;
-            DontDestroyOnLoad(gameObject);
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); //Persiste entre escenas
         }
-        else{
-            Destroy(gameObject);
+        else
+        {
+            Destroy(gameObject); //Evita duplicados
         }
     }
-
-    private void Start()
+    void OnEnable() 
     {
-        PlayMusic("Theme"); //aqui se pone el nombre de la cancion que queramos que sea theme pones el nombre del clip puesto en el inspector
-    //para poner sfx en alguna interacción ponerlo en los otros codigos como AudioManager.Instance.PlaySFX("nombre del archivo o nombre que le pusiste al sfx")
+    SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    public void PlayMusic(string name){
-        AudioSource s = Array.Find(musicSounds, x => x.name == name);
+    void OnDisable() 
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
-        if (s == null){
-            Debug.Log("Sound not found");
-        }else{
-            musicSource.clip = s.clip;
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
+    {
+        PlaySceneMusic(scene.name);
+    }
+
+    public void PlaySceneMusic(string sceneName) 
+    {
+        switch (sceneName)
+        {
+            case "MainScene":
+                musicSource.clip = background[0];
+                break;
+            case "MainLevel1Part":
+                musicSource.clip = background[1];
+                break;
+            case "Bodega_A1":
+            case "Bodega_B1":
+            case "Bodega_C1":
+            case "Bodega_D1":
+                musicSource.clip = background[2];
+                break;
+            default:
+                musicSource.clip = background[1];
+                break;
+        }
+
+        if (musicSource.clip != null && !musicSource.isPlaying)
             musicSource.Play();
-        }
     }
 
-    public void playSFX(string name){
-        AudioSource s = Array.Find(sfxSounds, x => x.name == name);
-
-        if (s == null){
-            Debug.Log("Sound not found");
-        }else{
-            sfxSource.PlayOneShot(s.clip);
-        }
-
-    }
-
-    public void ToggleMusic()
-    {
-        musicSource.mute=!musicSource.mute;
-
-    }
-    public void ToggleSFX(){
-        sfxSource.mute=!sfxSource.mute;
-    }
-
-    public void MusicVolume(float volume){
-        musicSource.volume = volume;
-    }
-    public void SFXVolume (float volume){
-        sfxSource.volume = volume;
+    private void PlaySFX(AudioClip clip){
+        SFXSource.PlayOneShot(clip);
     }
 }

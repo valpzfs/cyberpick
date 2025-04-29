@@ -94,6 +94,7 @@ public class DialogueManager : MonoBehaviour
         // Ocultamos el Canvas
         if(dialogueCanvas != null)
             dialogueCanvas.SetActive(false);
+            soundEffect.Stop();
     }
 }
 
