@@ -15,7 +15,6 @@ echo "*.apk" >> .gitignore
 [Tt]emp/
 [Bb]uild/
 [Bb]uilds/
-[Pp]ackages/
 .obj/
 *.dll
 *.exe
