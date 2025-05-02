@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
 
     // API communication
 
-    private string apiUrl = "http://localhost:3000/api/";
+    private string apiUrl = "https://cyberpick-web.vercel.app/api/";
     private int userId;
     private DateTime matchStartTime;
     private int currentMatchId;

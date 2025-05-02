@@ -6,7 +6,7 @@ using System.Collections;
 public class UserInfoDisplay : MonoBehaviour
 {
     public TextMeshProUGUI userInfoText; // Assign in Inspector
-    private string apiUrl = "http://localhost:3000/api/user"; // https://cyberpick-web.vercel.app/api/user
+    private string apiUrl = "https://cyberpick-web.vercel.app/api/user"; // https://cyberpick-web.vercel.app/api/user
 
     void Start()
     {
