@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
@@ -94,11 +95,13 @@ public class AdminPreg : MonoBehaviour
             //Win Condition
             if(correctAnswers == 2)
             {
+                StartCoroutine(attempt(true));
                 GameManager.instance.itemsWon.Add(GameManager.instance.currentItemID); 
                 //Debug.Log("Item ganado: " + GameManager.instance.currentItemID);
             }
             else
             {
+                StartCoroutine(attempt(false));
                 Debug.Log("Player did not Win, try Again, Finished");
             }
             generarPregunta();
@@ -108,4 +111,14 @@ public class AdminPreg : MonoBehaviour
             generarPregunta();
         }
     } 
+
+    private IEnumerator attempt(bool correct)
+    {
+        if (GameManager.instance != null)
+        {
+            yield return StartCoroutine(GameManager.instance.AddAttempt(correct));
+        } else {
+            Debug.LogError("GameManager instance is null. Cannot fetch user data.");
+        }
+    }
 }

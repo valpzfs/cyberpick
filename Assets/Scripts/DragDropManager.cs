@@ -31,6 +31,7 @@ public class DragDropManager : MonoBehaviour
         completedCount++;
         if (completedCount >= totalDraggables)
         {
+            StartCoroutine(endMatch(1));
             winPanel.SetActive(true); // Muestra el panel de victoria
             StartCoroutine(LoadScenewithDelay(1f)); //Espera 1 segundo
         }
@@ -39,5 +40,15 @@ public class DragDropManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene("MainScene");
+    }
+
+    private IEnumerator endMatch(int levelId)
+    {
+        if (GameManager.instance != null)
+        {
+            yield return StartCoroutine(GameManager.instance.EndMatch(levelId));
+        } else {
+            Debug.LogError("GameManager instance is null. Cannot fetch user data.");
+        }
     }
  }

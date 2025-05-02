@@ -12,9 +12,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
     }
 
-    public void EasyLevel(){
-        StartCoroutine(PlaySoundThenLoad(2));
+    public void EasyLevel()
+    {
+        StartCoroutine(RunEasyLevel());
     }
+
+    private IEnumerator RunEasyLevel()
+    {
+        yield return StartCoroutine(FetchUser());
+        yield return StartCoroutine(CreateMatch(1));
+        yield return StartCoroutine(PlaySoundThenLoad(2));
+    }
+
 
     public void Back()
     {
@@ -30,5 +39,25 @@ public class MainMenu : MonoBehaviour
             yield return new WaitForSeconds(delaySceneLoad);
         }
         SceneManager.LoadScene(sceneIndex);
+    }
+
+    private IEnumerator FetchUser()
+    {
+        if (GameManager.instance != null)
+        {
+            yield return StartCoroutine(GameManager.instance.FetchUserData());
+        } else {
+            Debug.LogError("GameManager instance is null. Cannot fetch user data.");
+        }
+    }
+
+    private IEnumerator CreateMatch(int levelId)
+    {
+        if (GameManager.instance != null)
+        {
+            yield return StartCoroutine(GameManager.instance.CreateMatch(levelId));
+        } else {
+            Debug.LogError("GameManager instance is null. Cannot fetch user data.");
+        }
     }
 }
