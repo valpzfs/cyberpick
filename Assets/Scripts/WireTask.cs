@@ -23,10 +23,23 @@ public class WireTask : MonoBehaviour
             Debug.Log("Player won quiz!, Finished");
             GameManager.instance.itemsWon.Add(GameManager.instance.currentItemID);
             GameManager.instance.SumPoints(10);
-            StartCoroutine(LoadSceneDelay(0.8f));
+            StartCoroutine(finishAttempt());
         }
     }
-
+    private IEnumerator finishAttempt()
+    {
+        yield return StartCoroutine(attempt(true));
+        yield return StartCoroutine(LoadSceneDelay(0.8f));
+    }
+    private IEnumerator attempt(bool correct)
+    {
+        if (GameManager.instance != null)
+        {
+            yield return StartCoroutine(GameManager.instance.AddAttempt(correct));
+        } else {
+            Debug.LogError("GameManager instance is null. Cannot fetch user data.");
+        }
+    }
     private IEnumerator LoadSceneDelay(float delay)
   {
     yield return new WaitForSeconds(delay);

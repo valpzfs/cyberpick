@@ -87,10 +87,10 @@ public class GameManager : MonoBehaviour
 
     // API communication
 
-    public string apiUrl = "http://localhost:3000/api/";
-    public int userId = 1;
-    public DateTime matchStartTime;
-    public int currentMatchId;
+    private string apiUrl = "http://localhost:3000/api/";
+    private int userId;
+    private DateTime matchStartTime;
+    private int currentMatchId;
 
     public IEnumerator FetchUserData()
     {
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public IEnumerator EndMatch(int levelId, int score)
+    public IEnumerator EndMatch(int levelId)
     {
         if (currentMatchId == 0)
         {
@@ -201,6 +201,43 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public IEnumerator AddAttempt(bool isCorrect)
+    {
+        // if (currentMatchId == 0)
+        // {
+        //     Debug.LogError("No match created, can't add attempt.");
+        //     yield break;
+        // }
+
+        AttemptClass attempt = new AttemptClass
+        {
+            matchId = currentMatchId,
+            isCorrect = isCorrect,
+        };
+
+        string json = JsonUtility.ToJson(attempt);
+
+        // Now add the attempt using currentMatchId
+        using (UnityWebRequest request = new UnityWebRequest(apiUrl + "attempt", "POST"))
+        {
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log("Attempt added successfully.");
+            }
+            else
+            {
+                Debug.LogError("Failed to add attempt: " + request.error);
+            }
+        }
+    }
 }
 
 [System.Serializable]
@@ -233,4 +270,11 @@ public class MatchResponse
 {
     public string message;
     public int matchId;
+}
+
+[System.Serializable]
+public class AttemptClass
+{
+    public int matchId;
+    public bool isCorrect;
 }
